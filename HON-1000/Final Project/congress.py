@@ -36,7 +36,7 @@ def get_senators_by_party(party):
                   'url':record[4], 'twitter':record[5], 'facebook':record[6],
                   'youtube':record[7]})
 
-  result = {'Senators':senators}
+  result = {'senators':senators}
   cursor.close()
   return jsonify(result)
 
@@ -58,51 +58,42 @@ def get_hreps_by_district(state_code,district):
 
   cursor.close()
   return jsonify(result)
+#*********************************************************************************************************************
+#INSERT FUNCTIONS AND END POINTS WITH NAMES HERE
 
-@app.route('/congress/hrep/party/<party>', methods=['GET'])
-def get_hreps_by_party(party):
+#Ravi's query:
+#Don't mind the caps locks, it should work as is
+@app.route('/congress/legislator/<state_code>', methods=['GET'])
+def get_legislators_by_state(state):
   query = '''
-    select state, fname, lname, concat(DAY(birthday),' ',MONTHNAME(birthday), ' ', YEAR(birthday)) birthday, url, twitter, facebook, youtube
-    from HREP
-    where party = %s
-    order by state
+    SELECT 'HREP' AS LTYPE, STATE, FNAME, LNAME, CONCAT(DAY(BIRTHDAY), ' ', MONTHNAME(BIRTHDAY), ' ',
+    YEAR(BIRTHDAY)) BIRTHDAY, URL, TWITTER, FACEBOOK, YOUTUBE
+    FROM HREP
+    WHERE STATE = %s
+    UNION
+    SELECT 'SENATOR', STATE STATE, FNAME, LNAME, CONCAT(DAY(BIRTHDAY), ' ', MONTHNAME(BIRTHDAY), ' ',
+    YEAR(BIRTHDAY)) BIRTHDAY, URL, TWITTER, FACEBOOK, YOUTUBE
+    FROM SENATOR
+    WHERE STATE = %s
+    ORDER BY LTYPE, LNAME ASC
   '''
   cursor = db.cursor()
-  cursor.execute(query,(party,))
+  cursor.execute(query,(state,))
   records = cursor.fetchall()
   if len(records) == 0:
     abort(404)
-  hreps = []
+  legislators = []
   for record in records:
-    hreps.append({'state':record[0], 'fname':record[1], 'lname':record[2],
+    legislators.append({'state':record[0], 'fname':record[1], 'lname':record[2],
                   'birthday':record[3],
                   'url':record[4], 'twitter':record[5], 'facebook':record[6],
                   'youtube':record[7]})
 
-  result = {'Representatives':hreps}
+  result = {'Legislators':legislators}
   cursor.close()
   return jsonify(result)
 
-@app.route('/congress/legislator/<state_code>', methods=['GET'])
-def get_sen_and_hrep(state_code):
-    query = '''select state, fname, lname, concat(DAY(birthday),' ',MONTHNAME(birthday), ' ', YEAR(birthday)) birthday, url, twitter, facebook, youtube from HREP where state = %s union select state, fname, lname, concat(DAY(birthday),' ',MONTHNAME(birthday), ' ', YEAR(birthday)) birthday, url, twitter, facebook, youtube from SENATOR where state = %s'''
-    
-    cursor = db.cursor()
-    cursor.execute(query,(state_code,state_code,))
-    records = cursor.fetchall()
-    if len(records) == 0:
-        abort(404)
-    legislators = []
-    for record in records:
-      legislators.append({'state':record[0], 'fname':record[1], 'lname':record[2],
-                  'birthday':record[3],
-                  'url':record[4], 'twitter':record[5], 'facebook':record[6],
-                  'youtube':record[7]})
-
-    result = {'Legislators':legislators}
-    cursor.close()
-    return jsonify(result)
-
+#Preetham's query:
 @app.route('/congress/senator/<state_code>', methods=['GET'])
 def get_senators_by_state(state_code):
     query = '''select state, fname, lname, concat(DAY(birthday),' ',MONTHNAME(birthday), ' ', YEAR(birthday)) birthday, url, twitter, facebook, youtube from SENATOR where state = %s'''
@@ -118,34 +109,64 @@ def get_senators_by_state(state_code):
                   'url':record[4], 'twitter':record[5], 'facebook':record[6],
                   'youtube':record[7]})
 
-    result = {'Senators':senators}
+    result = {'senators':senators}
     cursor.close()
     return jsonify(result)
-
+  
+#Emily's query:
 @app.route('/congress/hrep/<state_code>', methods=['GET'])
 def get_hreps_by_state(state_code):
-    query = '''select state, fname, lname, concat(DAY(birthday),' ',MONTHNAME(birthday), ' ', YEAR(birthday)) birthday, url, twitter, facebook, youtube from HREP where state = %s'''
+    query = '''
+      select fname, lname, concat(DAY(birthday),' ',MONTHNAME(birthday), ' ', YEAR(birthday)) birthday, url, twitter, facebook, youtube
+      from HREP
+      where state = %s
+    '''
     cursor = db.cursor()
-    cursor.execute(query,(state_code,))
+    cursor.execute(query,(state_code))
     records = cursor.fetchall()
     if len(records) == 0:
-        abort(404)
+      abort(404)
     hreps = []
     for record in records:
       hreps.append({'state':record[0], 'fname':record[1], 'lname':record[2],
                   'birthday':record[3],
                   'url':record[4], 'twitter':record[5], 'facebook':record[6],
-                  'youtube':record[7]})
+                  'youtube':record[7], 'district':record[8]})
 
     result = {'Representatives':hreps}
     cursor.close()
     return jsonify(result)
+  
+#Caroline's query:
+@app.route('/congress/hrep/party/<party>', methods=['GET'])
+def get_hrep_by_party(party):
+  query = '''
+    select state, fname, lname, concat(DAY(birthday),' ',MONTHNAME(birthday), ' ',
+    YEAR(birthday)) birthday, url, twitter, facebook, youtube
+    from HREP
+    where party = %s
+    order by state
+  '''
+  cursor = db.cursor()
+  cursor.execute(query,(party,))
+  records = cursor.fetchall()
+  if len(records) == 0:
+    abort(404)
+  hrep = []
+  for record in records:
+    hrep.append({'state':record[0], 'fname':record[1], 'lname':record[2],
+                  'birthday':record[3],
+                  'url':record[4], 'twitter':record[5], 'facebook':record[6],
+                  'youtube':record[7]})
 
+  result = {'Representatives':hrep}
+  cursor.close()
+  return jsonify(result)
 
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 if __name__ == '__main__':
-    app.run(host = 'localhost', debug=True)
+    app.run(host='localhost',debug=True)
     db.close()
