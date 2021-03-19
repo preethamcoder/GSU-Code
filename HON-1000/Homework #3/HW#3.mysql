@@ -1,0 +1,102 @@
+create database db101;
+use db101;
+SET FOREIGN_KEY_CHECKS = 0;
+drop table if exists BUILDING;
+drop table if exists MEDIA;
+drop table if exists ROOM;
+drop table if exists ROOMMEDIA;
+SET FOREIGN_KEY_CHECKS = 1;
+
+create table BUILDING (
+  bcode varchar(6),
+  bname varchar(30),
+  primary key (bcode)
+);
+
+create table MEDIA (
+  mcode varchar(6),
+  description varchar(50),
+  primary key (mcode)
+);
+
+create table ROOM (
+  bcode varchar(6),
+  rnumber varchar(4),
+  cap int,
+  layout varchar(20),
+  type enum ('P','G'),
+  dept varchar(4),
+  primary key (bcode,rnumber),
+  foreign key (bcode) references BUILDING(bcode)
+);
+
+create table ROOMMEDIA (
+  bcode varchar(6),
+  rnumber varchar(4),
+  mcode varchar(6),
+  primary key (bcode,rnumber,mcode),
+  foreign key (bcode,rnumber) references ROOM(bcode,rnumber),
+  foreign key (mcode) references MEDIA(mcode)
+);
+insert into BUILDING values ('25PP','25 Park Place');
+insert into BUILDING values ('ADHOLD','Adherhold Learning Center');
+insert into BUILDING values ('ARTS','Art & Humanities Bldg');
+insert into BUILDING values ('CLSO','Classroom South Bldg');
+insert into BUILDING values ('COE','College of Education');
+insert into BUILDING values ('COMMON','University Commons');
+insert into BUILDING values ('KELL','Kell Hall');
+insert into BUILDING values ('LANGDL','Langdale Hall');
+insert into BUILDING values ('LIBSO','Library South');
+insert into BUILDING values ('NSC','Natural Science Center');
+insert into BUILDING values ('PIED','Piedmont Hall');
+insert into BUILDING values ('PSC','Petit Science Building');
+insert into BUILDING values ('SPARKS','Sparks Hall');
+insert into BUILDING values ('URBAN','Urban Life Bldg');
+insert into MEDIA values ('BR','Blu-Ray Player');
+insert into MEDIA values ('CB','Chalk Board');
+insert into MEDIA values ('DC','Document Camera');
+insert into MEDIA values ('DVD','DVD Capabilities through IWS or Player');
+insert into MEDIA values ('ELMO','Elmo Device');
+insert into MEDIA values ('IWS','Instructor Workstation (Network)');
+insert into MEDIA values ('LAC','Laptop to AUX Connectivity');
+insert into MEDIA values ('LC','Lecture Capture/Video Confrencing Camera and Mic');
+insert into MEDIA values ('M','Map');
+insert into MEDIA values ('MWB','Mobile White Board');
+insert into MEDIA values ('NP','Network Port w/ charging station at each seat');
+insert into MEDIA values ('PS','Plasma Screen');
+insert into MEDIA values ('SWS','Student Workstation');
+insert into MEDIA values ('TP','Transparency Projector');
+insert into MEDIA values ('TV','TV for DVD/VCR');
+insert into MEDIA values ('VCR','VHS Capabilities through Player or Combo');
+insert into MEDIA values ('VP','Video Projector (Digital)');
+insert into MEDIA values ('WB','White Board');
+insert into MEDIA values ('WP','Wireless presentation system');
+insert into MEDIA values ('WT','Wall Talker');
+#1
+SELECT bcode, bname from BUILDING WHERE bname LIKE '%South%';
+#2
+Select bcode, rnumber from ROOM where cap > 100;
+#3
+select cap, layout, type, dept from ROOM WHERE ROOM.bcode = 'CLSO' and rnumber = '206';
+#4
+select Distinct mcode, description from MEDIA, BUILDING, ROOM WHERE ROOM.bcode = 'CLSO' and rnumber = '206';
+#5
+select DISTINCT rnumber from ROOM where ROOM.bcode = 'CLSO';
+#6
+select DISTINCT bcode, rnumber from ROOMMEDIA, MEDIA where description like '%DVD%';
+#7
+select DISTINCT ROOM.bcode, rnumber from ROOM, BUILDING where type = 'P' and dept = 'CSC';
+#8
+select COUNT(rnumber) from ROOM, BUILDING where ROOM.bcode = 'CLSO' and BUILDING.bcode = 'CLSO';
+#9
+select bcode, count(rnumber) from room group by bcode;
+#10
+select COUNT(distinct rnumber) from ROOMMEDIA where ROOMMEDIA.mcode = 'ELMO';
+#11
+SELECT mcode, COUNT(rnumber) from ROOMMEDIA group by mcode;
+#12
+SELECT SUM(cap) from ROOM where bcode = 'CLSO';
+#13
+SELECT bcode, SUM(cap) from ROOM group by bcode;
+#14
+SELECT SUM(cap) from ROOM;

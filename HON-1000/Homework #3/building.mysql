@@ -1,0 +1,14 @@
+insert into BUILDING values ('25PP','25 Park Place');
+insert into BUILDING values ('ADHOLD','Adherhold Learning Center');
+insert into BUILDING values ('ARTS','Art & Humanities Bldg');
+insert into BUILDING values ('CLSO','Classroom South Bldg');
+insert into BUILDING values ('COE','College of Education');
+insert into BUILDING values ('COMMON','University Commons');
+insert into BUILDING values ('KELL','Kell Hall');
+insert into BUILDING values ('LANGDL','Langdale Hall');
+insert into BUILDING values ('LIBSO','Library South');
+insert into BUILDING values ('NSC','Natural Science Center');
+insert into BUILDING values ('PIED','Piedmont Hall');
+insert into BUILDING values ('PSC','Petit Science Building');
+insert into BUILDING values ('SPARKS','Sparks Hall');
+insert into BUILDING values ('URBAN','Urban Life Bldg');
