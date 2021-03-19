@@ -1,0 +1,36 @@
+CSC 1302: PRINCIPLES OF COMPUTER SCIENCE II
+Lab 9
+
+How to Submit
+Please submit your answers to the iCollege ‘assignment’ dropbox for your lab, once you have completed. Failure to submit within your given time period will result in a ZERO FOR THIS LAB. NO EXCEPTIONS.
+  
+
+1.	What will be the output when the following program is executed?
+
+public class Recur{
+public static void main(String [] args){
+		print(5);
+}
+	
+      public static void print(int n) {
+	     if (n!=0){
+		print(n-1);
+	     	printNum(n);
+		System.out.println();
+		}
+      }
+
+public static void printNum(int n){
+	if(n!=0){
+			printNum(n-1);
+			System.out.print(n+ n+ " ");
+	}
+}
+}
+	
+
+2.	Write a recursive method called cumulativeSum() that takes one int parameter and returns the cumulative sum of the numbers up to n. [cumulativeSum(n)=1+2+3+….+n-1+n]
+
+3.	Write a recursive method called fib() that takes an int parameter and returns the Fibonacci number at that location in the series. 
+
+NOTE: The Fibonacci sequence is a sequence of numbers in which the first two numbers are 1 and each subsequent number is sum of the previous two Fibonacci numbers. The sequence is 1,1,2,3,5,8,13,21,34,55,… and so on. So fib(4) should print 3, fib(6) should print 8, fib(8) should print 21, fib(10) should print 55 and so on.

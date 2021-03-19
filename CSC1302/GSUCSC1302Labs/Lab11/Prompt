@@ -1,0 +1,13 @@
+CSC 1302: PRINCIPLES OF COMPUTER SCIENCE II
+Lab 11
+
+How to Submit
+Please submit your answers to the iCollege ‘assignment’ dropbox for your lab, once you have completed. Failure to submit within your given time period will result in a ZERO FOR THIS LAB. NO EXCEPTIONS.
+ 
+
+Write a client program ClientSorting and in the main method:
+1.	Call a method, SelectionSorter() that accepts an integer array as a parameter and sorts the elements in the array using the selection sort algorithm where it picks the maximum value in the array in each pass. Print the array before it is sorted in the main method, then after it is sorted in SelectionSorter(). 
+
+2.	Call a method, BubbleSorter() that accepts an integer array as a parameter and sorts the elements in the array in descending order (highest number first, then the second highest and so on) using the bubble sort algorithm. Print the array before it is sorted in the main method, then after it is sorted in BubbleSorter(). 
+
+3.	Call a method, InsertSorter() that accepts an integer array as a parameter and sorts the elements in the array using the insertion sort algorithm. Print the array before it is sorted in the main method, then after it is sorted in InsertSorter(). 

@@ -1,0 +1,14 @@
+CSC 1302: PRINCIPLES OF COMPUTER SCIENCE II
+Lab 10
+
+How to Submit
+Please submit your answers to the lab instructor once you have completed. 
+Failure to submit will result in a ZERO FOR THIS LAB. NO EXCEPTIONS.  
+
+1.	Write a program that 
+a.	Calls a method that performs sequential search. The method accepts two parameters: an array of integers and an integer. It returns the index of the integer in the array if it is found else it returns-1.
+
+b.	Calls another method that takes two parameters, an integer and a sorted integer array. The call should perform binary search and should return the index of the integer in the array if found and should return -(insertionPoint+ 1) if the number is not found. Print out the index in the main method.
+
+c.	Calls a third method that performs binary search recursively. It should take 4 parameters: 3 integers and a sorted array of integers. It should return the index of the element if found, if not then it should return -1. 
+

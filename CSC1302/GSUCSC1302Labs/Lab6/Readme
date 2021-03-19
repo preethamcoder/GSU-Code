@@ -1,0 +1,42 @@
+Given the following Coloring interface and Point class
+//Coloring interface
+public interface Coloring{
+	public String getColor();
+}
+
+//Point class
+public class Point {
+    private int x;
+    private int y;
+    public Point() {
+        this(0, 0);
+    }
+    public Point(int x, int y) {
+        setLocation(x, y);
+    }
+    //compare the x and y of two points
+    public boolean equals(Object o) {
+        if (o instanceof Point) {
+            Point other = (Point) o;
+            return x == other.x && y == other.y; //TRUE if they are the same
+        } else {  
+            return false;
+        }
+    }
+    public int getX() {
+        return x;
+    }
+    public int getY() {
+        return y;
+    }
+    public void setLocation(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
+}
+
+Write the ColoringPoint class such that it implements the Coloring interface and extends the Point class so that it can have colors. Override the toString() method to print out the coordinates and color of the Point, override the equals() method so that it compares color as well. Write the necessary constructors, accessors, and mutators. 
+Write a client class, ColoringClient, and create two different objects of the ColoringPoint class (CP_blue and CP_orange). Print the color of each object and compare if they are equal (x=x, y=y, color=color).  
