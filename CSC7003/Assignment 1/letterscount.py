@@ -17,6 +17,7 @@ def draw(counts):
     for a,b in zip(xaxis, counts):
         plt.text(a, b+8, str(b), horizontalalignment='center', verticalalignment='center')
     plt.show()
+
     
 #main()
 def get_count(fname):
@@ -29,6 +30,7 @@ def get_count(fname):
         for i in letters:
             numbers.append(data.count(i))
         return numbers
+
 def main():
     counts = get_count(sys.argv[1])
     draw(counts)
