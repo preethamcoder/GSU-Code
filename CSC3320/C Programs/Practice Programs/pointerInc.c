@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main(){
+	char val1 = 'a';
+	char *p1 = &val1;
+	char *p2 = p1++;
+	printf("CHAR VARIABLE\n");
+	printf("Address 1: %u\n", p1);
+	printf("Address 2: %u\n", p2);
+	int val2 = 12;
+	int *po1 = &val2;
+	int *po2 = po1++;
+	printf("INT VARIABLE\n");
+        printf("Address 1: %u\n", po1);
+        printf("Address 2: %u\n", po2);	
+	short val3 = 13;
+	short *poi1 = &val3;
+	short *poi2 = poi1++;
+	printf("SHORT VARIABLE\n");
+        printf("Address 1: %u\n", poi1);
+        printf("Address 2: %u\n", poi2);
+	double val4 = 12.32;
+	double *dp1 = &val4;
+	double *dp2 = dp1++;
+	printf("DOUBLE VARIABLE\n");
+        printf("Address 1: %u\n", dp1);
+        printf("Address 2: %u\n", dp2);
+	long val5 = 1234;
+	long *lp1 = &val5;
+	long *lp2 = lp1++;
+	printf("LONG VARIABLE\n");
+        printf("Address 1: %u\n", lp1);
+        printf("Address 2: %u\n", lp2);
+	float val6 = 21.23;
+	float *fp1 = &val6;
+	float *fp2 = fp1++;
+	printf("FLOAT VARIABLE\n");
+        printf("Address 1: %u\n", fp1);
+        printf("Address 2: %u\n", fp2);
+	return 0;
+}
