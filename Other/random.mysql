@@ -1,5 +1,5 @@
 #GRANT all privileges on windowsext.* to root@localhost IDENTIFIED BY 'Passw0rd$' WITH GRANT OPTION;
-	create database hackGSU;
+  create database hackGSU;
 	
   use hackGSU;
 	
