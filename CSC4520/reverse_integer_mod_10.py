@@ -4,6 +4,7 @@ def reverse_digit(inp):
     else:
         rev = 0
         if(inp < 0):
+            inp *= -1
             while(inp != 0):
                 rev += inp % 10
                 if(inp > 9):
