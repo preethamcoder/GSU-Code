@@ -1,0 +1,434 @@
+    1  ls
+    2  sudo handin100 1
+    3  sudo handin1000 1
+    4  handin --help
+    5  ssh handin1000 preethamcrypto.py
+    6  sudo handin1000 1
+    7  sudo handin1000 preethamcrypto.py
+    8  handin --help
+    9  sudo handin1000 1 preethamcrypto.py
+   10  exit
+   11  passwd sthelluri1
+   12  sudo passwd sthelluri1
+   13  exit
+   14  root passwd sthelluri1
+   15  passwd sthelluri1
+   16  exit
+   17  passwd sthelluri1
+   18  passwd
+   19  exit
+   20  ls
+   21  dir
+   22  sudo handin1000 2 song1.txt songlyrics.py song2.txt
+   23  exit() exit
+   24  exit
+   25  dir
+   26  sudo handin1000 HW#3.sql 3
+   27  sudo handin1000 -list 3
+   28  sudo handin1000 -list 2
+   29  sudo handin1000 -list 1
+   30  sudo handin1000 1 HW#3.sql 
+   31  sudo handin1000 -list 3
+   32  sudo handin1000 -list 2
+   33  sudo handin1000 -list 3
+   34  sudo handin1000 3 HW#3.sql 
+   35  sudo handin1000 -list 3
+   36  exit
+   37  sudo handin1000 HW4 hw4.py 
+   38  sudo handin1000 -list HW4
+   39  sudo handin1000 -list HW3
+   40  sudo handin1000 -list HW2
+   41  sudo handin1000 -list HW1
+   42  sudo handin1000 -list 1
+   43  sudo handin1000 -list 2
+   44  sudo handin1000 -list 3
+   45  sudo handin1000 -list 4
+   46  sudo handin1000 -list HW4
+   47  sudo handin1000 -list 4
+   48  sudo handin1000 4 hw4.py 
+   49  sudo handin1000 -list 4
+   50  sudo handin1000 -list HW4
+   51  sudo handin1000 HW4 hw4.py 
+   52  sudo handin1000 -list HW4
+   53  sudo handin1000 -list 4
+   54  sudo handin1000 -list HW4
+   55  sudo handin1000 -list 4
+   56  sudo handin1000 -list 3
+   57  sudo handin1000 -list 2
+   58  sudo handin1000 -list 1
+   59  exit
+   60  sudo handin1000 3 HW#3revised.sql 
+   61  exit
+   62  sudo handin1000 4 hw4.py 
+   63  exit
+   64  dir
+   65  sudo handin1000 summaries ~\$mmaries.docx 
+   66  exit
+   67  dir
+   68  Personal statement workshop:
+   69  This was one workshop where I learned what a personal statement is, why it is important, and what it does to my profile. I learned what is fair game on the personal statement and what is not. A written document where I can show showcase my values and priorities, it is one of the most important aspects of applications to graduate schools and certain jobs. We wrote a few samples to get a feel of the real prompt. It was a rewarding experience, as was able to debunk a few perceptions I had about this piece of work. I am supposed to be bold but not unrealistically ambitious.
+   70  Dont be sus!
+   71  Although I initially joined this event because my best friend was hosting it, I realized that I would have missed out on a lot if I didnt join. It was an event where every participant was supposed to play a multi-player game called Among US. Being one who didnt like video games, I was socializing and made new friends. I met people across different majors and interests. Owing to my friends pressure, I joined the game and had a lot of fun! I was the imposter in the round but was caught very quickly. I had to leave the event before its official closure, as I was a part of HackGSU too. 
+   72  dir
+   73  sudo handin1000 summaries summaries.txt 
+   74  exit
+   75  dir
+   76  sudo handin1000 project hreps.py senatorsread.py queries.sql congress.py ReadMe.txt 
+   77  exit
+   78  top
+   79  man wget
+   80  exit
+   81  python
+   82  pip install numpy
+   83  pip install --upgrade pip
+   84  python3
+   85  pip3 install pandas
+   86  pip3 install scipy
+   87  python3
+   88  java --version
+   89  mysql
+   90  sql
+   91  sql --version
+   92  oracle --version
+   93  gcc --version
+   94  cpp --version
+   95  js --version
+   96  javascript
+   97  json --version
+   98  cpp --version
+   99  json --version
+  100  oracle --version
+  101  sql --version
+  102  exit
+  103  ls -r
+  104  cat summaries.txt 
+  105  cat ReadMe.txt 
+  106  exit
+  107  az
+  108  aws
+  109  aws cli
+  110  exit
+  111  python3
+  112  cat ytvideodownlaoded.py
+  113  nano ytvideodownlaoded.py
+  114  pwd
+  115  nano ytvideodownlaoded.py
+  116  python3 ytvideodownlaoded.py 
+  117  pip3 install pytube
+  118  pip install pytube
+  119  sudo pip install pytube
+  120  exit
+  121  cat newLearnings.txt 
+  122  exit
+  123  ls -altr
+  124  ls -r
+  125  nano newLearnings.txt
+  126  ls -ltr
+  127  ls -ltr /
+  128  nano newLearnings.txt
+  129  ls -r
+  130  ls
+  131  jupyter
+  132  jupyter --version
+  133  nano Assignment1
+  134  nano analyzeLogs.txt
+  135  ll
+  136  ls-ltr
+  137  ls -ltr
+  138  ls -altr
+  139  dir
+  140  df
+  141  size *
+  142  nano analyzeLogs.txt
+  143  exit
+  144  ls
+  145  nano shell_script.txt
+  146  nano first_shell_on_tinman.sh
+  147  ls
+  148  first_shell_on_tinman.sh
+  149  ./first_shell_on_tinman.sh
+  150  chmod 721 first_shell_on_tinman.sh 
+  151  ./first_shell_on_tinman.sh
+  152  nano first_shell_on_tinman.sh
+  153  ./first_shell_on_tinman.sh
+  154  nano first_shell_on_tinman.sh
+  155  ./first_shell_on_tinman.sh
+  156  nano first_shell_on_tinman.sh
+  157  ./first_shell_on_tinman.sh
+  158  nano first_shell_on_tinman.sh
+  159  ./first_shell_on_tinman.sh Output
+  160  nano first_shell_on_tinman.sh
+  161  ./first_shell_on_tinman.sh Output
+  162  nano first_shell_on_tinman.sh
+  163  ./first_shell_on_tinman.sh Output
+  164  nano first_shell_on_tinman.sh
+  165  ./first_shell_on_tinman.sh Output
+  166  nano first_shell_on_tinman.sh
+  167  ./first_shell_on_tinman.sh Output
+  168  nano first_shell_on_tinman.sh
+  169  ./first_shell_on_tinman.sh Output
+  170  ./first_shell_on_tinman.sh utput
+  171  ./first_shell_on_tinman.sh
+  172  nano first_shell_on_tinman.sh
+  173  ./first_shell_on_tinman.sh output
+  174  ./first_shell_on_tinman.sh ./output
+  175  nano shell_script.txt
+  176  nano first_shell_on_tinman.sh
+  177  ./first_shell_on_tinman.sh
+  178  nano first_shell_on_tinman.sh
+  179  ./first_shell_on_tinman.sh
+  180  ./first_shell_on_tinman.sh 1231324
+  181  ./first_shell_on_tinman.sh
+  182  nano first_shell_on_tinman.sh
+  183  ./first_shell_on_tinman.sh
+  184  nano first_shell_on_tinman.sh
+  185  nano shell_script.txt
+  186  exit
+  187  python
+  188  python3
+  189  pip3 install bitbucket
+  190  python3
+  191  ls
+  192  cd master/
+  193  ls
+  194  exit
+  195  ps -ef
+  196  ps -ef grep | python
+  197  ps grep | python
+  198  exit
+  199  ls
+  200  python --version
+  201  python3 --version
+  202  ipython
+  203  nano 1.py
+  204  nohup python3 1.py &
+  205  ls
+  206  cd ..
+  207  which ls
+  208  cd /usr/bin/
+  209  ls
+  210  ls ls
+  211  ls -ltr ls
+  212  ls /proc/cpuinfo 
+  213  cat /proc/cpuinfo 
+  214  cat /proc/cpuinfo | grep -i "processor"
+  215  cd ~
+  216  ls
+  217  cd ..
+  218  ls
+  219  ls raj
+  220  echo $PATH
+  221  which java
+  222  echo path
+  223  cat /proc/meminfo 
+  224  free -h
+  225  cd /proc/
+  226  ls
+  227  uptime 
+  228  man uptime 
+  229  abc
+  230  cd ~
+  231  nano 1.sh
+  232  ./1.sh
+  233  chmod 777 1.sh 
+  234  ./1.sh
+  235  mkdir temp
+  236  cd temp/
+  237  ls
+  238  ./1.sh
+  239  echo $PATH
+  240  pwd
+  241  export PATH=$PATH:/home/students/sthelluri1/temp 
+  242  echo $PATH
+  243  ./1.sh
+  244  export PATH=$PATH:/home/students/sthelluri1 
+  245  ./1.sh
+  246  1.sh 
+  247  bash 1.sh
+  248  ls
+  249  cd ..
+  250  1.sh 
+  251  ps =ef
+  252  ps -ef
+  253  ps -ef | wc -l
+  254  top
+  255  exit
+  256  ls
+  257  cd master/
+  258  ls
+  259  cd ..
+  260  nano thread.c
+  261  ls
+  262  nano thread.c
+  263  exit
+  264  cat thread.c 
+  265  nano thread.c 
+  266  ls
+  267  exit
+  268  ls
+  269  java --version
+  270  grep -r "a"
+  271  exit
+  272  ls
+  273  nano thread.c
+  274  gcc -o thread.c thread.out
+  275  gcc thread.c -o thread
+  276  nano thread.c
+  277  gcc thread.c -o thread
+  278  nano thread.c
+  279  gcc thread.c -o thread
+  280  nano thread.c
+  281  gcc thread.c -o thread
+  282  nano thread.c
+  283  gcc thread.c -o thread
+  284  nano thread.c
+  285  gcc thread.c -o thread
+  286  nano thread.c
+  287  gcc thread.c -o thread
+  288  nano thread.c
+  289  gcc thread.c -o thread
+  290  nano thread.c
+  291  gcc thread.c -o thread
+  292  nano thread.c
+  293  gcc thread.c -o thread
+  294  nano thread.c
+  295  gcc thread.c -o thread
+  296  gcc thread.c -lpthread
+  297  ./a.out 
+  298  nano thread.c
+  299  gcc thread.c -lpthread
+  300  ./a.out 
+  301  gcc thread.c -lpthread
+  302  ./a.out 
+  303  nano thread.c
+  304  gcc thread.c -lpthread
+  305  ./a.out 
+  306  nano thread.c
+  307  gcc thread.c -lpthread
+  308  ./a.out 
+  309  nano thread.c
+  310  gcc thread.c -lpthread
+  311  ./a.out 
+  312  exit
+  313  nano thread.c
+  314  gcc thread.c -lpthread
+  315  nano thread.c
+  316  gcc thread.c -lpthread
+  317  exit
+  318  qsort([1, 2, 3, 10, 3, 2, 10])
+  319  qsort(1, 2, 3, 10, 3, 2, 10)
+  320  man qsort
+  321  qsort
+  322  qsort(10)
+  323  qsort 10
+  324  exit
+  325  ps -ef | more
+  326  ps -ef | more | grep "python"
+  327  ps -o pri
+  328  ps -ef -o pri
+  329  ps -e -o uid,pid,ppid,pri,ni,cmd
+  330  ps -e -o uid,pid,ppid,pri,ni,cmd | grep "python"
+  331  exit
+  332  man ps
+  333  exit
+  334  top
+  335  cpu
+  336  util
+  337  cat /proc/cpuinfo
+  338  ls
+  339  history
+  340  cat
+  341  nano history.sh
+  342  ./history.sh
+  343  chmod 777 history.sh 
+  344  chmod 777 history.sh
+  345  ./history.sh 
+  346  ls
+  347  cat history.txt
+  348  exit
+  349  ls
+  350  ls -a
+  351  exit
+  352  nano shell.py
+  353  python3 shell.py 
+  354  top
+  355  exit
+  356  exti
+  357  exit
+  358  man ping
+  359  ping 0.0.0.0
+  360  ping 69.0.0.0
+  361  ping 69.0.0.1
+  362  exit
+  363  ls
+  364  ls *.sh
+  365  nano logsanalyze.py
+  366  nano history.sh 
+  367  ./history.sh 
+  368  nano comphist.txt 
+  369  ./history.sh 
+  370  history
+  371  history > history.txt
+  372  cat -n history.txt 
+  373  cat history.txt 
+  374  sed '/^[0-9]/' history.txt 
+  375  sed '/^[0-9]/ ' history.txt 
+  376  sed '/^[0-9]/d' history.txt 
+  377  sed 's/^[0-9]\+ //' history.txt 
+  378  cat history.txt 
+  379  sed 's/^ [0-9]\+ //' history.txt 
+  380  sed '/s/^[0-9]\+ //' history.txt 
+  381  sed '\s/^[0-9]\+ //' history.txt 
+  382  sed 's/^[0-9]\+ //' history.txt 
+  383  nano history.txt 
+  384  sed 's/^[t ]*//g' history.txt 
+  385  sed 's/^[0-9]\+ //' history.txt 
+  386  sed 's/^[0-9]\+//' history.txt 
+  387  sed 's/^[t ]*//g' history.txt 
+  388  cat history.txt 
+  389  sed 's/^[t ]*//g' history.txt > history.txt
+  390  cat history.txt 
+  391  ls
+  392  ls history.
+  393  ls history.*
+  394  nano history.txt 
+  395  history > history.txt 
+  396  nano history.txt 
+  397  sed 's/^[t ]*[0-9]$//g' history.txt
+  398  sed 's/^[t ]*[0-9]//g' history.txt
+  399  sed 's/^[t ]*[0-9]*//g' history.txt
+  400  sed 's/^[t ]*[0-9]+*//g' history.txt
+  401  sed 's/^[t ]*[0-9]* //g' history.txt
+  402  sed 's/^[t ]*[0-9]* //g' history.txt > new.txt
+  403  cat new.txt 
+  404  nano history.sh
+  405  ./history.sh 
+  406  nano history.sh
+  407  ./history.sh 
+  408  ping 0.0.0.0
+  409  ./history.sh 
+  410  mysql
+  411  ./history.sh 
+  412  history.sh 
+  413  ./history.sh 
+  414  exit
+  415  ./history.sh 
+  416  vi logsanalyze.py 
+  417  ./history.sh 
+  418  grep -w "history" history.txt 
+  419  ./history.sh 
+  420  exit
+  421  vi history.sh 
+  422  ./history.sh 
+  423  cat comphist.txt 
+  424  ./history.sh 
+  425  cd ~
+  426  ./history.sh 
+  427  echo "hey there"
+  428  ./history.sh 
+  429  vi logsanalyze.py
+  430  ./history.sh 
+  431  vi logsanalyze.py
+  432  ./history.sh 
+  433  vi logsanalyze.py 
+  434  ./history.sh 
