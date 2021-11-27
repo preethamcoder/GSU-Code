@@ -1,3 +1,6 @@
+import os
+import sys
+
 def parse_logs(file):
     f = open(file, "r")
     data = f.readlines()
@@ -40,9 +43,19 @@ def return_max_extention(command, commands_frequency):
     return(most_freq)
 
 if __name__ == '__main__':
-    result = parse_logs('comphist.txt')
-    lookup = input("Enter your command: ")
-    ext = return_max_extention(lookup, result)
-    if(ext != None):
-        print(f"Most used extention for {lookup} is", ext)
-        print("Your command would be:", lookup+" "+ext)
+    result = parse_logs(sys.argv[1])
+    res = 'y'
+    while(res != 'no'):
+        lookup = input("Enter your command: ")
+        ext = return_max_extention(lookup, result)
+        if(ext != None and 'history' not in lookup):
+            print(f"Most used extention for {lookup} is", ext)
+            print("Your command would be:", lookup+" "+ext)
+            inp2 = input(f"Add extentions to {lookup} {ext} if needed: ")
+            os.system(lookup+ " " + ext + inp2)
+        if(ext != None and 'history' in lookup):
+            print("Your command would be:", lookup+" "+ext)
+            inp2 = input(f"Add extentions to {lookup} {ext} if needed: ")
+            lookup = f'cat {sys.argv[1]} '
+            os.system(lookup+ ext + inp2)
+        res = input("Type 'no' if you don't wish to try any more commands. Hit enter if you want to continue:  ")
