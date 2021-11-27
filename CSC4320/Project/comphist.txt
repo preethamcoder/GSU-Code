@@ -27,14 +27,14 @@ sudo handin1000 HW#3.sql 3
 sudo handin1000 -list 3
 sudo handin1000 -list 2
 sudo handin1000 -list 1
-sudo handin1000 1 HW#3.sql 
+sudo handin1000 1 HW#3.sql
 sudo handin1000 -list 3
 sudo handin1000 -list 2
 sudo handin1000 -list 3
-sudo handin1000 3 HW#3.sql 
+sudo handin1000 3 HW#3.sql
 sudo handin1000 -list 3
 exit
-sudo handin1000 HW4 hw4.py 
+sudo handin1000 HW4 hw4.py
 sudo handin1000 -list HW4
 sudo handin1000 -list HW3
 sudo handin1000 -list HW2
@@ -45,10 +45,10 @@ sudo handin1000 -list 3
 sudo handin1000 -list 4
 sudo handin1000 -list HW4
 sudo handin1000 -list 4
-sudo handin1000 4 hw4.py 
+sudo handin1000 4 hw4.py
 sudo handin1000 -list 4
 sudo handin1000 -list HW4
-sudo handin1000 HW4 hw4.py 
+sudo handin1000 HW4 hw4.py
 sudo handin1000 -list HW4
 sudo handin1000 -list 4
 sudo handin1000 -list HW4
@@ -57,23 +57,23 @@ sudo handin1000 -list 3
 sudo handin1000 -list 2
 sudo handin1000 -list 1
 exit
-sudo handin1000 3 HW#3revised.sql 
+sudo handin1000 3 HW#3revised.sql
 exit
-sudo handin1000 4 hw4.py 
+sudo handin1000 4 hw4.py
 exit
 dir
-sudo handin1000 summaries ~\$mmaries.docx 
+sudo handin1000 summaries ~\$mmaries.docx
 exit
 dir
 Personal statement workshop:
 This was one workshop where I learned what a personal statement is, why it is important, and what it does to my profile. I learned what is fair game on the personal statement and what is not. A written document where I can show showcase my values and priorities, it is one of the most important aspects of applications to graduate schools and certain jobs. We wrote a few samples to get a feel of the real prompt. It was a rewarding experience, as was able to debunk a few perceptions I had about this piece of work. I am supposed to be bold but not unrealistically ambitious.
 Dont be sus!
-Although I initially joined this event because my best friend was hosting it, I realized that I would have missed out on a lot if I didnt join. It was an event where every participant was supposed to play a multi-player game called Among US. Being one who didnt like video games, I was socializing and made new friends. I met people across different majors and interests. Owing to my friends pressure, I joined the game and had a lot of fun! I was the imposter in the round but was caught very quickly. I had to leave the event before its official closure, as I was a part of HackGSU too. 
+Although I initially joined this event because my best friend was hosting it, I realized that I would have missed out on a lot if I didnt join. It was an event where every participant was supposed to play a multi-player game called Among US. Being one who didnt like video games, I was socializing and made new friends. I met people across different majors and interests. Owing to my friends pressure, I joined the game and had a lot of fun! I was the imposter in the round but was caught very quickly. I had to leave the event before its official closure, as I was a part of HackGSU too.
 dir
-sudo handin1000 summaries summaries.txt 
+sudo handin1000 summaries summaries.txt
 exit
 dir
-sudo handin1000 project hreps.py senatorsread.py queries.sql congress.py ReadMe.txt 
+sudo handin1000 project hreps.py senatorsread.py queries.sql congress.py ReadMe.txt
 exit
 top
 man wget
@@ -101,8 +101,8 @@ oracle --version
 sql --version
 exit
 ls -r
-cat summaries.txt 
-cat ReadMe.txt 
+cat summaries.txt
+cat ReadMe.txt
 exit
 az
 aws
@@ -113,12 +113,12 @@ cat ytvideodownlaoded.py
 nano ytvideodownlaoded.py
 pwd
 nano ytvideodownlaoded.py
-python3 ytvideodownlaoded.py 
+python3 ytvideodownlaoded.py
 pip3 install pytube
 pip install pytube
 sudo pip install pytube
 exit
-cat newLearnings.txt 
+cat newLearnings.txt
 exit
 ls -altr
 ls -r
@@ -147,7 +147,7 @@ nano first_shell_on_tinman.sh
 ls
 first_shell_on_tinman.sh
 ./first_shell_on_tinman.sh
-chmod 721 first_shell_on_tinman.sh 
+chmod 721 first_shell_on_tinman.sh
 ./first_shell_on_tinman.sh
 nano first_shell_on_tinman.sh
 ./first_shell_on_tinman.sh
@@ -209,8 +209,8 @@ cd /usr/bin/
 ls
 ls ls
 ls -ltr ls
-ls /proc/cpuinfo 
-cat /proc/cpuinfo 
+ls /proc/cpuinfo
+cat /proc/cpuinfo
 cat /proc/cpuinfo | grep -i "processor"
 cd ~
 ls
@@ -220,17 +220,17 @@ ls raj
 echo $PATH
 which java
 echo path
-cat /proc/meminfo 
+cat /proc/meminfo
 free -h
 cd /proc/
 ls
-uptime 
-man uptime 
+uptime
+man uptime
 abc
 cd ~
 nano 1.sh
 ./1.sh
-chmod 777 1.sh 
+chmod 777 1.sh
 ./1.sh
 mkdir temp
 cd temp/
@@ -238,16 +238,16 @@ ls
 ./1.sh
 echo $PATH
 pwd
-export PATH=$PATH:/home/students/sthelluri1/temp 
+export PATH=$PATH:/home/students/sthelluri1/temp
 echo $PATH
 ./1.sh
-export PATH=$PATH:/home/students/sthelluri1 
+export PATH=$PATH:/home/students/sthelluri1
 ./1.sh
-1.sh 
+1.sh
 bash 1.sh
 ls
 cd ..
-1.sh 
+1.sh
 ps =ef
 ps -ef
 ps -ef | wc -l
@@ -261,8 +261,8 @@ nano thread.c
 ls
 nano thread.c
 exit
-cat thread.c 
-nano thread.c 
+cat thread.c
+nano thread.c
 ls
 exit
 ls
@@ -294,21 +294,21 @@ gcc thread.c -o thread
 nano thread.c
 gcc thread.c -o thread
 gcc thread.c -lpthread
-./a.out 
+./a.out
 nano thread.c
 gcc thread.c -lpthread
-./a.out 
+./a.out
 gcc thread.c -lpthread
-./a.out 
+./a.out
 nano thread.c
 gcc thread.c -lpthread
-./a.out 
+./a.out
 nano thread.c
 gcc thread.c -lpthread
-./a.out 
+./a.out
 nano thread.c
 gcc thread.c -lpthread
-./a.out 
+./a.out
 exit
 nano thread.c
 gcc thread.c -lpthread
@@ -340,9 +340,9 @@ history
 cat
 nano history.sh
 ./history.sh
-chmod 777 history.sh 
 chmod 777 history.sh
-./history.sh 
+chmod 777 history.sh
+./history.sh
 ls
 cat history.txt
 exit
@@ -350,7 +350,7 @@ ls
 ls -a
 exit
 nano shell.py
-python3 shell.py 
+python3 shell.py
 top
 exit
 exti
@@ -363,72 +363,348 @@ exit
 ls
 ls *.sh
 nano logsanalyze.py
-nano history.sh 
-./history.sh 
-nano comphist.txt 
-./history.sh 
+nano history.sh
+./history.sh
+nano comphist.txt
+./history.sh
 history
 history > history.txt
-cat -n history.txt 
-cat history.txt 
-sed '/^[0-9]/' history.txt 
-sed '/^[0-9]/ ' history.txt 
-sed '/^[0-9]/d' history.txt 
-sed 's/^[0-9]\+ //' history.txt 
-cat history.txt 
-sed 's/^ [0-9]\+ //' history.txt 
-sed '/s/^[0-9]\+ //' history.txt 
-sed '\s/^[0-9]\+ //' history.txt 
-sed 's/^[0-9]\+ //' history.txt 
-nano history.txt 
-sed 's/^[t ]*//g' history.txt 
-sed 's/^[0-9]\+ //' history.txt 
-sed 's/^[0-9]\+//' history.txt 
-sed 's/^[t ]*//g' history.txt 
-cat history.txt 
+cat -n history.txt
+cat history.txt
+sed '/^[0-9]/' history.txt
+sed '/^[0-9]/ ' history.txt
+sed '/^[0-9]/d' history.txt
+sed 's/^[0-9]\+ //' history.txt
+cat history.txt
+sed 's/^ [0-9]\+ //' history.txt
+sed '/s/^[0-9]\+ //' history.txt
+sed '\s/^[0-9]\+ //' history.txt
+sed 's/^[0-9]\+ //' history.txt
+nano history.txt
+sed 's/^[t ]*//g' history.txt
+sed 's/^[0-9]\+ //' history.txt
+sed 's/^[0-9]\+//' history.txt
+sed 's/^[t ]*//g' history.txt
+cat history.txt
 sed 's/^[t ]*//g' history.txt > history.txt
-cat history.txt 
+cat history.txt
 ls
 ls history.
 ls history.*
-nano history.txt 
-history > history.txt 
-nano history.txt 
+nano history.txt
+history > history.txt
+nano history.txt
 sed 's/^[t ]*[0-9]$//g' history.txt
 sed 's/^[t ]*[0-9]//g' history.txt
 sed 's/^[t ]*[0-9]*//g' history.txt
 sed 's/^[t ]*[0-9]+*//g' history.txt
 sed 's/^[t ]*[0-9]* //g' history.txt
 sed 's/^[t ]*[0-9]* //g' history.txt > new.txt
-cat new.txt 
+cat new.txt
 nano history.sh
-./history.sh 
+./history.sh
 nano history.sh
-./history.sh 
+./history.sh
 ping 0.0.0.0
-./history.sh 
+./history.sh
 mysql
-./history.sh 
-history.sh 
-./history.sh 
+./history.sh
+history.sh
+./history.sh
 exit
-./history.sh 
-vi logsanalyze.py 
-./history.sh 
-grep -w "history" history.txt 
-./history.sh 
+./history.sh
+vi logsanalyze.py
+./history.sh
+grep -w "history" history.txt
+./history.sh
 exit
-vi history.sh 
-./history.sh 
-cat comphist.txt 
-./history.sh 
+vi history.sh
+./history.sh
+cat comphist.txt
+./history.sh
 cd ~
-./history.sh 
+./history.sh
 echo "hey there"
-./history.sh 
+./history.sh
 vi logsanalyze.py
-./history.sh 
+./history.sh
 vi logsanalyze.py
-./history.sh 
-vi logsanalyze.py 
-./history.sh 
+./history.sh
+vi logsanalyze.py
+./history.sh
+cat -n logsanalyze.py
+git clone https://github.com/preethamcoder/GSU-Code.git
+cd GSU-Code/
+ls
+ls -altr
+ls -ltr
+mkdir CSC4320
+cd CSC4320
+cp ../../logsanalyze.py ../../comphist.txt ../../history.* ../../new.txt .
+git status
+cd ..
+git add
+git add .
+git status
+cd CSC4320/
+mkdir Final Project
+cd Final/
+cd ..
+rmdir Final/
+ls
+cd Project/
+mv ../* .
+mv ../*.txt ../*.py ../*.sh .
+mv ../*.sh .
+ls
+cd ..
+ls
+cd ..
+git add .
+git status
+git commit -m "Added all the code for the project"
+git config --global preetham23415@gmail.com
+git config --global user.email preetham23415@gmail.com
+git config --global user.name Preetham
+git commit -m "Added all the code for the project"
+git push
+git help config
+git config credential.helper store
+git push
+exit
+echo "Welcome back"
+./history.sh
+cat history.sh
+nano history.sh
+./history.sh
+ls new.txt
+cat history.sh
+./history.sh
+nano history.sh
+./history.sh
+exit
+nano fuck.sh
+chmod 777 fuck.sh
+./fuck.sh
+rm fuck.sh
+ls
+exit
+ls -r
+git
+git user
+git cred
+grep
+gerp -r
+grep -r "fu" *
+exit
+ls f*
+grep -r "fuc" *
+exit
+ls
+cat history.sh
+./history.sh
+cat logsanalyze.py
+ls
+ls GSU-Code/
+nano logsanalyze.py
+python3 logsanalyze.py
+nano logsanalyze.py
+python3 logsanalyze.py
+nano logsanalyze.py
+cp logsanalyze.py logs2.py
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+history | grep "sed"
+mv logsanalyze.py logsanalyzeold.py
+nano logs2.py
+python3 logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+history | grep "sed"
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+history | grep sed
+nano history.sh
+./history.sh
+nano history.sh
+nano logs2.py
+./history.sh
+python3 logs2.py comphist.txt
+nano logs2.py
+python3 logs2.py comphist.txt
+nano logs2.py
+./history.sh
+ls
+rmdir temp2/
+ls temp/
+rmdir temp/
+nano logs2.py
+./history.sh
+nano logs2.py
+./history.sh
+nano logs2.py
+./history.sh
+history
+./history.sh
+nano logs2.py
+./history.sh
+nano logs2.py
+./history.sh
+history
+history | grep "hi"
+cat history.sh
+nano logs2.py
+./history.sh
+nano logs2.py
+./history.sh
+nano logs2.py
+./history.sh
+ls
+nano comphist.txt
+python3 logs2.py
+python3 logs2.py comphist.txt
+exit
+python3 logs2.py comphist.txt
+exit
+ls
+exit
+cat history.sh
+mv logs2.py logsanalyzer.py
+sed 's/logs2 /logsanalyzer/g' history.sh
+sed 's/logs2 /logsanalyzer/g' history.sh > history.sh
+cat history.sh
+history.sh
+./history.sh
+ls
+vi history.sh
+ls
+./history.sh
+nano logsanalyzer.py
+./history.sh
+vi logsanalyzer.py
+grep -r "praskjhaf" *
+jupyter lab
+exit
+./history.sh
+cat history.sh
+vi logsanalyzer.py
+./history.sh
+history | grep "hi there"
+history | grep "sed"
+grep -r "ninja" *
+cat logsanalyzeold.py
+exit
+ls
+nano logsanalyzer.py
+./history.sh
+nano logsanalyzer.py
+./history.sh
+nano logsanalyzer.py
+./history.sh
+nano logsanalyzer.py
+./history.sh
+nano logsanalyzer.py
+./history.sh
+nano logsanalyzer.py
+vi sampleproc.py
+python3 sampleproc.py
+vi sampleproc.py
+python3 sampleproc.py
+vi sampleproc.py
+python3 sampleproc.py
+vi sampleproc.py
+python3 sampleproc.py
+vi sampleproc.py
+python3 sampleproc.py
+vi sampleproc.py
+python3 sampleproc.py
+history
+cp logsanalyzer.py shells.py
+nano shells.py
+python3 shells.py
+python3 shells.py comphist.txt
+exit
+echo "Hi everyone"
+python3 shells.py comphist.txt
+exit
+python3 shells.py comphist.txt
+exit
+cat history.sh
+./history.sh
+vi logsanalyzer.py
+./history.sh
+vi logsanalyzer.py
+./history.sh
+grep -r "code" GSU-Code/
+./history.sh
+history
+./history.sh
+vi logsanalyzer.py
+./history.sh
+/bin/history
+ls /bin/
+which history
+ls -al .bash_history
+cat | ls -al .bash_history
+cat .bash_history
+path .bash_history
+readlink .bash_history
+readlink .bash_history > sample.txt
+cat sample.txt
+rm sample.txt
+readlink -f .bash_history
+cp /home/students/sthelluri1/.bash_history /bin
+vi testhistory.py
+python3 testhistory.py
+vi testhistory.py
+python3 testhistory.py
+rm testhistory.py
+echo $HISTFILE
+vi testhistory.py
+python3 testhistory.py
+vi testhistory.py
+python3 testhistory.py
+vi testhistory.py
+python3 testhistory.py
+vi testhistory.py
+python3 testhistory.py
+$HISTFILE | grep "sed"
+chmod 771 .bash_history
+$HISTFILE | grep "sed"
+chmod 777 .bash_history
+$HISTFILE | grep "sed"
+vi testhistory.py
+python3 testhistory.py
+vi testhistory.py
+python3 testhistory.py
+./history.sh
+vi testhistory.py
+python3 testhistory.py
+vi testhistory.py
+python3 testhistory.py
+cat history.sh
+history
+cat history.sh
+nano history.sh
+nano logsanalyzer.py
+./history.sh
+nano logsanalyzer.py
+./history.sh
