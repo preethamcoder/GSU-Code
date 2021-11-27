@@ -52,10 +52,14 @@ if __name__ == '__main__':
             print(f"Most used extention for {lookup} is", ext)
             print("Your command would be:", lookup+" "+ext)
             inp2 = input(f"Add extentions to {lookup} {ext} if needed: ")
+            print("\n\n--------------Start of output---------------")
             os.system(lookup+ " " + ext + inp2)
+            print("-----------------End of output-----------------")
         if(ext != None and 'history' in lookup):
             print("Your command would be:", lookup+" "+ext)
             inp2 = input(f"Add extentions to {lookup} {ext} if needed: ")
             lookup = f'cat {sys.argv[1]} '
+            print("\n\n---------------Start of output---------------")
             os.system(lookup+ ext + inp2)
-        res = input("Type 'no' if you don't wish to try any more commands. Hit enter if you want to continue:  ")
+            print("----------------End of output-----------------")
+        res = input("\n\nType 'no' if you don't wish to try any more commands. Hit enter if you want to continue:  ")
