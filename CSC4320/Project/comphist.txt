@@ -483,10 +483,6 @@ cat history.sh
 nano history.sh
 ./history.sh
 exit
-nano fuck.sh
-chmod 777 fuck.sh
-./fuck.sh
-rm fuck.sh
 ls
 exit
 ls -r
