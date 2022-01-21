@@ -33,7 +33,7 @@ class TimesAndInstructorsAlternate
                System.out.println(input + " " + courses[i][1] + " " + courses[i][2]);
            }
        }
-       if(f == False){
+       if(f == false){
            System.out.println("Invalid Entry: No Such course");
        }
 
