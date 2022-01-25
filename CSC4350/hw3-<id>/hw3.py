@@ -12,7 +12,7 @@ def q1(inp):
 		return None
 
 def q2(radius, height):
-	return(math.PI * radius * radius * height)
+	return(math.pi * radius * radius * height)
 
 def q3(lst):
 	res = ','.join(lst)
