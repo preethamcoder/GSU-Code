@@ -8,7 +8,9 @@ public class Student extends Person
         public void setData()
         {
             super.setData();
+            System.out.println("Enter major: ");
             major = input.nextLine();
+            System.out.println("Enter GPA: ");
             gpa = input.nextDouble();
         }
     @Override
