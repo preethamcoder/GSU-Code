@@ -7,6 +7,7 @@ public class Faculty extends CollegeEmployee
         public void setData()
         {
             super.setData();
+            System.out.println("Enter the tenured status: ");
             isTenured = input.nextBoolean();
         }
     @Override
