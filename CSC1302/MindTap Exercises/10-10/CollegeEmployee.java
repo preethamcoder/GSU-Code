@@ -9,8 +9,11 @@ public class CollegeEmployee extends Person
         public void setData()
         {
             super.setData();
+            System.out.println("Enter SSN: ");
             ssn = input.nextLine();
+            System.out.println("Enter annual salary: ");
             annualSalary = input.nextDouble();
+            System.out.println("Enter department: ");
             dept = input.nextLine();
         }
     @Override
