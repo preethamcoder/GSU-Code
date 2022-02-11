@@ -15,16 +15,16 @@ def p_dlog_0(p):
 
 def p_lhs_0(p):
     "left : form"
-    lhs_vars = set(p[1])
-    p[0] = lhs_vars
+    left_vars = set(p[1])
+    p[0] = left_vars
 
 def p_rhs_0(p):
     "right : form2"
-    rhs_vars = set()
-    for varlist in p[1]:
-        if varlist:
-            rhs_vars = rhs_vars.union(set(varlist))
-    p[0] = rhs_vars
+    right_vars = set()
+    for each in p[1]:
+        if each:
+            right_vars = right_vars.union(set(each))
+    p[0] = right_vars
 
 def p_formseq_0(p):
     "form2 : form COMMA form2"
