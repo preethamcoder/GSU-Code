@@ -1,0 +1,37 @@
+1.	Write a class called Rectangle that implements the Comparable interface. The class should contain three fields:  height (int), width (int), topCorner (Point). Write the necessary constructors, accessors, mutators and other methods. The Point class is given below.
+2.	Write a client class, RectangleClient that creates an ArrayList of ten Rectangle objects called list1. 
+a.	Print the list. 
+b.	Call Collections.sort(list1), to sort the elements according to the height. If the height of any objects are equal, then sort the list using the width of the rectangle and if the width of any objects are equal, as well, then sort them using the topCorner point (hint: call the Point.compareTo() method). 
+c.	Print the sorted list.
+
+public class Point implements Comparable<Point> {
+    private int x;
+    private int y;
+    public Point() {
+        this(0, 0);
+    }
+
+    public Point(int x, int y) {
+        this.x=x;
+        this.y=y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
+
+    public int compareTo(Point pt){
+	if(x==pt.x)
+		return y-pt.y;
+	else
+		return x-pt.x;
+    }
+}

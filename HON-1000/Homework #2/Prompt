@@ -1,0 +1,6 @@
+In this problem you will read a text file containing the lyrics of a song (assume no blank lines in the lyrics) and store each word that appears in the song in a Python Dictionary whose key is the word and the value is a list of positions where the word appears in the lyric (starting at 1). 
+If the word appears at the end of a line, you should store the negative of the position to indicate end of line. Then, using the dictionary you will produce the following output:
+display the map
+display the lyrics
+Total number of unique words in the song
+Most frequent word (if there is a tie, display any one of them)

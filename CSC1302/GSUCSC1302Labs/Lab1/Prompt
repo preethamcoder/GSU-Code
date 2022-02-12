@@ -1,0 +1,40 @@
+CSC 1302: PRINCIPLES OF COMPUTER SCIENCE II
+Lab 1
+
+How to Submit
+Please submit your answers to the lab instructor once you have completed. 
+Failure to submit will result in a ZERO FOR THIS LAB. NO EXCEPTIONS.  
+
+
+1.	Write a java program that will print out following pattern. Use nested for loops, no input required from the user.
+
+5
+5 4
+5 4 3
+5 4 3 2
+5 4 3 2 1
+
+
+2.	Write a Java program that asks the user to enter an array of integers in the main method. The program will ask the user for the number of integer elements to be put in the array, and then ask the user for each element of the array. The program then calls a method named isSorted() that accepts an array of integers and returns true if the list is in sorted (increasing) order and false otherwise. For example, if arrays named arr1 and arr2 store [10, 20, 30, 41, 56] and [2, 5, 3, 12, 10] respectively, the calls isSorted(arr1) and isSorted(arr2) should return true and false respectively. Assume the array has at least one integer element. A one-element array is considered to be sorted.
+ 
+public class Lab1.1{
+
+     public static void main(String []args){
+         for (int i=5; i==5; i++) {
+             System.out.println(i);
+             	for (int j=4; j==4; j++) {
+             		System.out.println(i+" "+j);
+             		for (int k=3; k==3; k++) {
+             			System.out.println(i+" "+j+" "+k);
+             			for (int m=2; m==2; m++) {
+             				System.out.println(i+" "+j+" "+k+" "+m);
+             				for (int n=1; n==1; n++) {
+             					System.out.println(i+" "+j+" "+k+" "+m+" "+n);
+             
+         				}
+         			}
+         		}
+         	}
+         }
+     }
+}

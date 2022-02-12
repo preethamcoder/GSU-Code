@@ -1,0 +1,12 @@
+CSC 1302: PRINCIPLES OF COMPUTER SCIENCE II
+Lab 12
+
+How to Submit
+Please submit your answers to the iCollege ‘assignment’ dropbox for your lab, once you have completed. Failure to submit within your given time period will result in a ZERO FOR THIS LAB. NO EXCEPTIONS.
+ 
+Write a client program ClientSorting2 and in the main method:
+1.	Write a modified version of the selection sort algorithm (SelectionSorter()) that sorts an array of strings (alphabetically) rather than one of integer values. Print the array before it is sorted in the main method, then after it is sorted in SelectionSorter().
+
+2.	Write a modified version of insertion sort algorithm (InsertSorter()) that sorts an array of strings rather than one of integer values. Print the array before it is sorted in the main method, then after it is sorted in InsertSorter().
+
+3.	Write a modified “dual” version of the selection sort algorithm that selects both the largest and smallest elements on each pass and moves each of them to the appropriate end of an integer array. Print the array before it is sorted in the main method, then after it is sorted in the new combination method.

@@ -1,0 +1,41 @@
+CSC 1302: PRINCIPLES OF COMPUTER SCIENCE II
+Lab 2
+
+How to Submit
+Please submit your answers to the lab instructor once you have completed. 
+Failure to submit will result in a ZERO FOR THIS LAB. NO EXCEPTIONS.  
+
+
+Write a program with a main method that asks the user to enter an integer array of 10 elements. Your main method will call each of the three methods described below and print out the results of the methods 2, 3, which return values. 
+
+1.	printReverse() - a method that receives an array of integers, then reverses the elements of the array and prints out all the elements from inside the method. Print all in one line separated by commas (see sample output below). 
+
+2.	getLargest() – a method that receives an array of integers, then returns the largest integer value in the array. (print result from main)
+
+3.	computeTwice()- a method that receives an array of integers, then returns an array of integers which contains 2 times of all the numbers in the array (see the sample output below). (print result from main)
+
+Sample output: 
+Enter a number:
+22
+Enter a number:
+34
+Enter a number:
+21
+Enter a number:
+35
+Enter a number:
+12
+Enter a number:
+4
+Enter a number:
+2
+Enter a number:
+3
+Enter a number:
+99
+Enter a number:
+81
+
+Here the array in reverse: 81, 99, 3, 2, 4, 12, 35, 21, 34, 22
+The highest valued element: 99
+The array with two times each element: [162, 198, 6, 4, 8, 24, 70, 42, 68, 44]

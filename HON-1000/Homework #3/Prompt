@@ -1,0 +1,17 @@
+The data for these tables is given in building.sql, media.sql, and room.sql.
+Write SQL queries and execute them against the MySQL database for the classroom database for the following:
+
+Get bcode and bname of buildings whose bname contains the word 'SOUTH'
+Get bcode and rnumber for rooms with capacity greater than 100
+Get cap, layout, type, and dept for room 'CLSO' '206'
+Get mcode, description for media in room 'CLSO' '206'
+Get rnumber of rooms in building with bcode='CLSO'
+Get bcode and rnumber for rooms with media description containing term 'DVD'
+Get bcode and rnumber for rooms that are 'P' type and owned by dept 'CSC'
+Get number of rooms in 'CLSO' building
+Get number of rooms for each building
+Get number of rooms that have 'ELMO' media
+Get number of rooms for each media type
+Get total number of seats in all classrooms in 'CLSO'
+Get total number of seats in each building
+Get total number of seats in all classrooms

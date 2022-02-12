@@ -1,0 +1,20 @@
+body
+{
+    background-color: #2196f3;
+    color: yellow;
+    font-family: Arial;
+}
+
+
+
+li
+{
+    font-size:36;
+    color:green;
+}
+
+img
+{
+    width: 200;
+    height: 200;
+}

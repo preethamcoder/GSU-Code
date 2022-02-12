@@ -1,0 +1,12 @@
+Write a program that prints out the lists in main after the following methods are called. 
+1.	removeOddLength: Takes an ArrayList of strings as a parameter and removes all of the strings that have an odd length (number of characters), from the list. Return the ArrayList to main and print.
+
+2.	swapPairs: Takes an ArrayList and switches the order of values of strings in a pairwise fashion. Your method should switch the order of the first two values, then the next two, then the next two and so on. If the number of values in the list is odd, the method should not move the final element. For example, if the list stores [“madam”, “I”, “am”, “your”, “adam”] your method should change this lists content to [“I”, “madam”, “your”, “am”, “adam”] Return the ArrayList to main and print.
+
+3.	intersect: Accepts two sorted ArrayList of integers as parameters and returns one containing only the elements that are found in both. For example, if list1 and list2 initially store:
+
+[1, 4, 8, 9, 11, 15, 17, 28, 41, 59]
+[4, 7, 11, 17, 19, 20, 23, 28, 37, 59, 81]
+
+Then the call of intersect(list1, list2)returns: [4, 11, 17, 28, 59]
+Return the ArrayList to main and print

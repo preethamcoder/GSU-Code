@@ -1,0 +1,43 @@
+The class diagram with four classes Student, Graduate, Undergraduate, and Exchange is given. Write the classes as described in the class diagram. The fields and methods for each class is given below. 
+ 
+Student:
+	Fields: 	major (String)
+gpa (double)
+		creditHours (int)
+	Methods:
+		getGpa: returns gpa
+getYear: returns “freshman”, “sophomore”, “junior” or “senior” as determined by earned credit hours: 
+•	Freshman: Less than 32 credit hours
+•	Sophomore: At least 32 credit hours but less than 64 credit hours
+•	Junior: At least credit hours 64 but less than 96 credit hours    
+•	Senior: At least 96 credit hours
+
+Graduate:
+	Fields: degree (String) (“Masters” or “PhD”)
+		concentration (String)
+		years (int) (stores no. of years spent in grad school)
+	Methods: 
+getYear: returns years (this is an integer, not like the student…)
+getConcentration: returns concentration (ex: Data Science, NeuroScience, Bioinformatics, Cybersecurity, etc.)
+
+Undergraduate:
+	Fields: honors (Boolean)
+	Methods: 
+isHonors: returns honors (TRUE or FALSE)
+
+Exchange:
+	Fields: country (String)
+year(string) (start date of the exchange program, stores Fall, Spring or Summer followed by the year e.g., Fall 2020)
+	Methods:
+		getYear: returns year
+		getCountry: returns country
+
+
+•	Write a client class, called StudentClient. 
+•	Create an object of class Undergraduate called Alex whose major is CS, gpa is 3.9, credit hours = 54, and honors = TRUE. 
+•	Create an object of class Graduate called Mary whose degree is “Masters”, years = 1, gpa is 3.91, major = “Computer Science” and concentration is “Data Science”. 
+•	Print out Alex’s major, gpa, year, and use isHonors method to see if the he is an honors student. 
+•	Print out Mary’s major, concentration, and years spent in graduate school.
+•	Create an object of class Exchange called YingShu, for an exchange student with Fall 2020, from Tiawan, and print out their gpa, major, and country.
+
+hint: you can override toString() to print things and combine with parent classes.

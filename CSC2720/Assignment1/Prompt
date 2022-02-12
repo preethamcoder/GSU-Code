@@ -1,0 +1,34 @@
+CSc 2720 - Data Structures: Assignment 1
+ [100 points]
+
+How to Submit:
+
+Turn the .java file in Folder Assignment 1 in iCollege no later than 11:00 p.m. ET on 01/27/2021
+
+Notes:
+
+1.	Do not use any library for matrix multiplication.
+
+2.	Always use comments to explain your program.
+
+3.	No copying allowed. If it is found that students copy from each other, all of these programs will get 0.
+
+4.	You must use matrix.java as the program name; otherwise, you will lose 10%.
+
+Requirements:
+
+You are to write a program name matrix.java that makes the dot products of 2 arrays.
+
+1. Your program should prompt the user for the dimensions of the two squares matrices, making sure that the user input is equal to 50.
+
+2.	If the above is not met, prompt the user for a new value.
+
+3.	Now generate random integer numbers (ranging from 0 to 50) to fill both matrices.
+
+4.	Display these two matrices on the screen.
+
+5.	Multiply the two matrices and display the result on the screen.
+
+6.	Insert a clock to see how long it would take to multiply these two matrices and display the time (with a message to this effect).
+
+7.	Prompt the user asking if they want to repeat the program.
