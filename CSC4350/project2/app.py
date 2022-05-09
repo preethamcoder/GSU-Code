@@ -1,6 +1,7 @@
 # pylint: disable=no-member
 '''This app interacts with the TMDB and Wikipedia APIS to allow user to search
 and review specific movies. The image and the name of movie is displayed.'''
+
 import os
 from flask import Flask, render_template, request, redirect, flash
 from flask_sqlalchemy import SQLAlchemy
