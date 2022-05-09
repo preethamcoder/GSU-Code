@@ -1,0 +1,131 @@
+body{
+  text-align: center;
+  background-color: oldlace;
+}
+
+.App{
+  margin-top:10%;
+}
+
+
+.description{
+  font-family:sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.nav{
+  font-family:sans-serif;
+  font-size: 13px;
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:inherit;
+  margin-top:25px;
+  margin-left:90%;
+}
+
+
+.remove-highlighting{
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:inherit;
+}
+
+.search-bar{
+  border-radius: 10px white;
+  padding: 10px;
+  width: 20%;
+  color:black;
+  border: none;
+  resize: none;
+  outline: none;
+  border-radius: 7px;
+}
+
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  resize: none;
+  outline: none;
+  text-align: center;
+  height: center;
+}
+.video  {
+  width: 750px;
+  height:315px;
+  border-radius:10px;
+}
+.skip-button{
+  background-color: transparent;
+  border: none;
+  resize: none;
+  outline: none;
+  text-align: center;
+  height: center;
+}
+
+.input {
+  background-color: transparent;
+  color: black;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid black 1px;
+  padding: 3px 1px;
+  width: 35%;
+  margin-top:60px;
+  top: 30%;
+  bottom: 30%;
+
+}
+comment-button{
+margin-top: 50px;
+}
+
+.save-button {
+  background-color: transparent;
+  border: none;
+  resize: none;
+  outline: none;
+  text-align: center;
+  height: center;
+}
+
+.username{
+  width:25%;
+  background-color: #394150;
+  padding:5px;
+  color:white;
+  border-radius:5px;
+  margin: left;
+  border-radius: 1px;
+  box-shadow: 5px 5px #888888;
+  font-family:sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.comments{
+  width:35%;
+  background-color: white;
+  padding:13px;
+  height: 10%;
+  color:black;
+  border-radius:7px;
+  margin: auto;
+}
+
+/* .saved-playlist{
+  position: 'fixed';
+  top: 25%; 
+  right: 30px; 
+  border: 3px solid;
+  border-color: #330000;   
+  width: 200px;
+} */

@@ -1,0 +1,30 @@
+import logo from './logo.svg';
+import './App.css';
+import {useState, useEffect} from 'react';
+
+function App() {
+    let [reviews, getReviews] = useState([])
+    useEffect(() => {
+    fetch('/revs', {
+      method: "POST",
+      headers: {
+        "content_type": "application/json",
+      }
+    }).then((response) => response.json()).then((data) => {
+      console.log(data)
+      getReviews(data)
+    })
+  }, []);
+    return(
+		<div>
+		<form>
+		<ul>
+        {reviews.map(rand => {
+          return <ul> {"Review id: "+rand.rev_id+"    Rating: "+rand.rating+"    Comment: "+rand.reviews} </ul>
+        } )}
+         </ul>
+		</form>
+		</div>
+    )
+}
+export default App;

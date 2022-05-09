@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+<form action = "/", method = "POST">
+<label>Add Movie</label><br>
+<input type = "text", name = "add"><br>
+<label>Delete Movie</label><br>
+<input type = "text", name = "delete"><br>
+<input type = "submit", value = "PUSH CHANGES">
+</form>
+<h3>You saved {{num}} shows</h3>
+<ol>
+{%for movie in movies_list: %}
+	<li>{{movie}}</li>
+{%endfor%}
+</ol>
+</body>
+</html>

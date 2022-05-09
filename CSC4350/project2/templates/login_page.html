@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">  
+        <h1>Welcome to the Review app!</h1><br> 
+        <body>
+            <form action = "/validate", method = "POST">
+                <label>USER EMAIL</label><br>
+                <input type = "text", name = "email"><br>
+                <label>PASSWORD</label><br>
+                <input type="password" id="textarea" name="password" required><br>
+                {% with messages = get_flashed_messages()%}
+                {% if messages %}
+                {%for message in messages%}
+                <label class = "flashes">{{message}}</label>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+                <br>
+                <input type = "submit" id="submit" value = "SIGN IN"><br><br>
+                <a href = "/signup">SIGN UP</a>
+            </form>
+        </body>
+    </head>
+</html>

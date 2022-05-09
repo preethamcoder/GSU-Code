@@ -1,0 +1,10 @@
+Flask
+Flask_Login
+Flask_SQLAlchemy
+python-dotenv
+requests
+Jinja2
+pylint
+psycopg2-binary
+SQLAlchemy
+werkzeug

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <h1>Make an account here: </h1><br>
+    <form action="/newuser" method="POST">
+        <label>EMAIL</label><br><br>
+        <input type="text" id="textarea" name="email" required><br>
+        <label>PASSWORD</label><br>
+        <input type="password" id="textarea" name="password" required><br>
+        {% with messages = get_flashed_messages()%}
+        {% if messages%}
+        {%for message in messages%}
+        <label class = "flashes">{{message}}</label>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+        <br>
+        <label>LAST NAME</label><br>
+        <input type = "text", name = "lname" required><br>
+        <label>FIRST NAME</label><br>
+        <input type = "text", name = "fname" required><br>
+        <input type = "submit" id="submit" value = "SIGN UP">
+        </form>
+        </body>
+    </head>
+</html>

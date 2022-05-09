@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">     
+        <body>
+            <nav><a href="/search">SEARCH SOMETHING DIFFERENT</a></nav>
+            <h2>Results for {{search}}</h2>
+            {% for ind in range(length)%}
+            <div id = "column">
+                <a href="{{route[ind]}}&path={{image[ind]}}"><img alt = {{title[ind]}} src={{image[ind]}}></a>
+            {%if wlink[ind] != "/home"%}
+            <a href = "{{wlink[ind]}}"><h3>{{title[ind]}}</h3></a>
+            {% else %}
+            <h4>{{title[ind]}}</h4>
+            {%endif%}
+            </div>
+            {% endfor %}
+        </body>
+    </head>
+</html>

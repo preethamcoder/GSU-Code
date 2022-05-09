@@ -1,0 +1,40 @@
+body {
+    background-color: #2196f3;
+    background-image: linear-gradient(green, orange, yellow);
+    color: black;
+    text-align: center;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+#submit {
+    font-family: cursive;
+    font-size: medium;
+    background-color: blueviolet;
+}
+
+h1 {
+    color: orange;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 32px;
+}
+
+h2 {
+    color: green;
+    font-family: "Comic Sans MS";
+    font-size: 28px;
+}
+
+a {
+    font-family: "Comic Sans MS";
+    font-weight: 200;
+}
+
+p {
+    color: red;
+    font-size: 26px;
+}
+
+img {
+    width: 400;
+    height: 400;
+}

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">     
+        <body>
+            <h1>{{name}}: {{score}}/10</h1>
+            <img width="300" height="300" src={{path}}>
+            <div class="form">
+                <form action="{{redirect_back}}" method="POST">
+                    <label for="comments">CRITIQUE here. Feel free to drag the box to increase the size!</label><br>
+                    <textarea name = "comments", type = "text" size="40" required class = "text"></textarea><br>
+                    <label>Rate out of 10</label><br>
+                    <input name = "rating" type = "number", min = "0", max="10" required class="rating"><br><br>
+                    <input type = "submit" id="submit" value = "ADD REVIEW">
+                </div>
+            {%for item in comments%}
+            <div class = "message">
+                <div class = "col">
+                    <div class = "row">
+                        <div class="comment">
+                            <p>{{item}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+            <a href="/search">Review some other movie</a>
+        </body>
+    </head>
+</html>
