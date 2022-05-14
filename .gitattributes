@@ -1,2 +1,4 @@
 *.mysql linguist-detectable=true
 *.mysql linguist-language=sql
+*.js* linguist-detectable=true
+*.js* linguist-detectable=JavaScript
