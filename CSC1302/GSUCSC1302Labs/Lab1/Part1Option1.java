@@ -1,8 +1,7 @@
-package csc1302;
+//package csc1302;
 public class pattern1 {
 
 	public static void main(String[] args) {
-		{
 			for (int x=5; x==5; x++) {
 	             		System.out.println(x);
 	             	for (int y=4; y==4; y++) {
@@ -19,3 +18,5 @@ public class pattern1 {
 	         		}
 	         	}
 	         }
+		}
+	}
