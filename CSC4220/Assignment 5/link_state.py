@@ -1,5 +1,6 @@
 from graph import *
 
+# Read all graph and create it
 def read_topology(file_name):
     file = open(file_name, 'r')
     data = file.readlines()
@@ -7,6 +8,7 @@ def read_topology(file_name):
     file.close()
     return g
 
+# Read the messages
 def read_soruce_and_dest(file_name):
     file = open(file_name, 'r')
     data = file.readlines()
@@ -20,6 +22,7 @@ def read_soruce_and_dest(file_name):
     file.close()
     return res
 
+# Read the changes
 def read_changes(file_name):
     file = open(file_name, 'r')
     data = file.readlines()
@@ -33,19 +36,22 @@ def read_changes(file_name):
     file.close()
     return res
 
+# Find the forwarding tables
 def get_f_t(grr):
     tab = grr.forward_tables()
     return tab
 
+# Get all paths and best path to break tie
 def tables(grr, s, d):
     grr.dfs_run(s, d, set(), [], 0)
     p = grr.get_best_path()
     grr.paths_with_costs = []
     return p
 
+# Find the path, distance, and output message 
 def l_s(grr, operation):
     s, d, m = operation
-    res = grr.link_state(s, d, m)
+    res = grr.link_state(s)
     p = tables(grr, s, d)
     if res:
         if d in res and res[d] != float('inf'):
@@ -60,7 +66,7 @@ if __name__ == '__main__':
     get_tabs = get_f_t(gr)
     for t in get_tabs:
         for key, vals in t.items():
-            string = "Node: "+key+"\t"+"Next_Hop: "+vals['next_hop']+"\t"+f"Cost: {vals['distance']}"
+            string = key+" "+vals['next_hop']+" "+str(vals['distance'])
             output.write(string)
             output.write('\n')
         output.write('\n')
@@ -75,7 +81,7 @@ if __name__ == '__main__':
         output.write('\n'+f"------ At this point, change {c} is added\n")
         for t in get_tabs:
             for key, vals in t.items():
-                string = "Node: "+key+"\t"+"Next_Hop: "+vals['next_hop']+"\t"+f"Cost: {vals['distance']}"
+                string = key+" "+vals['next_hop']+' '+str(vals['distance'])
                 output.write(string)
                 output.write('\n')
             output.write('\n')
