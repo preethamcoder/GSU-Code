@@ -1,0 +1,109 @@
+Node: 1	Next_Hop: 1	Cost: 0
+Node: 2	Next_Hop: 4	Cost: 6
+Node: 3	Next_Hop: 4	Cost: 9
+Node: 4	Next_Hop: 4	Cost: 1
+Node: 5	Next_Hop: 4	Cost: 2
+
+Node: 1	Next_Hop: 5	Cost: 6
+Node: 2	Next_Hop: 2	Cost: 0
+Node: 3	Next_Hop: 3	Cost: 3
+Node: 4	Next_Hop: 5	Cost: 5
+Node: 5	Next_Hop: 5	Cost: 4
+
+Node: 1	Next_Hop: 2	Cost: 9
+Node: 2	Next_Hop: 2	Cost: 3
+Node: 3	Next_Hop: 3	Cost: 0
+Node: 4	Next_Hop: 2	Cost: 8
+Node: 5	Next_Hop: 2	Cost: 7
+
+Node: 1	Next_Hop: 1	Cost: 1
+Node: 2	Next_Hop: 5	Cost: 5
+Node: 3	Next_Hop: 5	Cost: 8
+Node: 4	Next_Hop: 4	Cost: 0
+Node: 5	Next_Hop: 5	Cost: 1
+
+Node: 1	Next_Hop: 4	Cost: 2
+Node: 2	Next_Hop: 2	Cost: 4
+Node: 3	Next_Hop: 2	Cost: 7
+Node: 4	Next_Hop: 4	Cost: 1
+Node: 5	Next_Hop: 5	Cost: 0
+
+from 2 to 1 cost 6 hops 2 5 4 message here is a message from 2 to 1
+from 3 to 5 cost 7 hops 3 2 message this one gets sent from 3 to 5!
+from 3 to 1 cost 9 hops 3 2 5 4 message bro, this is cool
+from 3 to 7 cost infinite hops unreachable message send
+from 7 to 10 cost infinite hops unreachable message send
+
+------ At this point, change 1 is added
+Node: 1	Next_Hop: 1	Cost: 0
+Node: 2	Next_Hop: 4	Cost: 2
+Node: 3	Next_Hop: 4	Cost: 5
+Node: 4	Next_Hop: 4	Cost: 1
+Node: 5	Next_Hop: 4	Cost: 2
+
+Node: 1	Next_Hop: 4	Cost: 2
+Node: 2	Next_Hop: 2	Cost: 0
+Node: 3	Next_Hop: 3	Cost: 3
+Node: 4	Next_Hop: 4	Cost: 1
+Node: 5	Next_Hop: 4	Cost: 2
+
+Node: 1	Next_Hop: 2	Cost: 5
+Node: 2	Next_Hop: 2	Cost: 3
+Node: 3	Next_Hop: 3	Cost: 0
+Node: 4	Next_Hop: 2	Cost: 4
+Node: 5	Next_Hop: 2	Cost: 5
+
+Node: 1	Next_Hop: 1	Cost: 1
+Node: 2	Next_Hop: 2	Cost: 1
+Node: 3	Next_Hop: 2	Cost: 4
+Node: 4	Next_Hop: 4	Cost: 0
+Node: 5	Next_Hop: 5	Cost: 1
+
+Node: 1	Next_Hop: 4	Cost: 2
+Node: 2	Next_Hop: 4	Cost: 2
+Node: 3	Next_Hop: 4	Cost: 5
+Node: 4	Next_Hop: 4	Cost: 1
+Node: 5	Next_Hop: 5	Cost: 0
+
+from 2 to 1 cost 2 hops 2 4 message here is a message from 2 to 1
+from 3 to 5 cost 5 hops 3 2 4 message this one gets sent from 3 to 5!
+from 3 to 1 cost 5 hops 3 2 4 message bro, this is cool
+from 3 to 7 cost infinite hops unreachable message send
+from 7 to 10 cost infinite hops unreachable message send
+
+------ At this point, change 2 is added
+Node: 1	Next_Hop: 1	Cost: 0
+Node: 2	Next_Hop: 4	Cost: 6
+Node: 3	Next_Hop: 4	Cost: 9
+Node: 4	Next_Hop: 4	Cost: 1
+Node: 5	Next_Hop: 4	Cost: 2
+
+Node: 1	Next_Hop: 5	Cost: 6
+Node: 2	Next_Hop: 2	Cost: 0
+Node: 3	Next_Hop: 3	Cost: 3
+Node: 4	Next_Hop: 5	Cost: 5
+Node: 5	Next_Hop: 5	Cost: 4
+
+Node: 1	Next_Hop: 2	Cost: 9
+Node: 2	Next_Hop: 2	Cost: 3
+Node: 3	Next_Hop: 3	Cost: 0
+Node: 4	Next_Hop: 2	Cost: 8
+Node: 5	Next_Hop: 2	Cost: 7
+
+Node: 1	Next_Hop: 1	Cost: 1
+Node: 2	Next_Hop: 5	Cost: 5
+Node: 3	Next_Hop: 5	Cost: 8
+Node: 4	Next_Hop: 4	Cost: 0
+Node: 5	Next_Hop: 5	Cost: 1
+
+Node: 1	Next_Hop: 4	Cost: 2
+Node: 2	Next_Hop: 2	Cost: 4
+Node: 3	Next_Hop: 2	Cost: 7
+Node: 4	Next_Hop: 4	Cost: 1
+Node: 5	Next_Hop: 5	Cost: 0
+
+from 2 to 1 cost 6 hops 2 5 4 message here is a message from 2 to 1
+from 3 to 5 cost 7 hops 3 2 message this one gets sent from 3 to 5!
+from 3 to 1 cost 9 hops 3 2 5 4 message bro, this is cool
+from 3 to 7 cost infinite hops unreachable message send
+from 7 to 10 cost infinite hops unreachable message send
