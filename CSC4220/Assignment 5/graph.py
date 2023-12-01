@@ -118,7 +118,7 @@ class Graph:
         else:
             return "inf"
 
-    def link_state(self, s, d, m):
+    def link_state(self, s):
         distances = {n:float('inf') for n in self.g}
         tmp = {}
         tmp[s] = 0
@@ -143,7 +143,7 @@ class Graph:
     def forward_tables(self):
         res = []
         for start in self.vertices:
-            self.link_state(start, "", "")
+            self.link_state(start)
             f_t = {start:{'next_hop':start, 'distance':0}}
             for node in self.g:
                 if node != start:
