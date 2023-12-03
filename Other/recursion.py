@@ -43,8 +43,14 @@ def fast_power(base, exp):
     tmp = fast_power(base, exp//2)
     return tmp * tmp * (base if exp % 2 == 1 else 1)
 
-def get_tilings_possible():
-    return
+def get_tilings_possible(n):
+    """Given a 4xn board, get the number of ways you can tile it with 4x1 tiles. They can be placed horizontally or vertically
+    Args:
+        n (int): Number of columns
+    """
+    if n >= 0 and n < 4:
+        return 1
+    return get_tilings_possible(n-1) + get_tilings_possible(n-4)
 
 if __name__ == '__main__':
     print(check_sorted([1, 2, 3, 4, 5, 6]))
@@ -55,3 +61,4 @@ if __name__ == '__main__':
     print(power(2, -997))
     print(fast_power(2, 997))
     print(fast_power(2, -997))
+    print(get_tilings_possible(6))
