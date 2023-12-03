@@ -48,7 +48,7 @@ def get_tilings_possible(n):
     Args:
         n (int): Number of columns
     """
-    if n >= 0 and n < 4:
+    if n <= 3:
         return 1
     return get_tilings_possible(n-1) + get_tilings_possible(n-4)
 
