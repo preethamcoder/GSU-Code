@@ -42,6 +42,10 @@ def fast_power(base, exp):
         return 1/base
     tmp = fast_power(base, exp//2)
     return tmp * tmp * (base if exp % 2 == 1 else 1)
+
+def get_tilings_possible():
+    return
+
 if __name__ == '__main__':
     print(check_sorted([1, 2, 3, 4, 5, 6]))
     print(check_sorted([1, 2, 9, 6]))
