@@ -30,12 +30,24 @@ def power(base, exp):
         return base * power(base, exp-1)
     else:
         return 1/base * power(base, exp+1)
+
+def fast_power(base, exp):
+    if base == 0 or base == 1:
+        return base
+    if exp == 0:
+        return 1
+    if exp == 1:
+        return base
+    if exp < 0:
+        return 1/base
+    tmp = fast_power(base, exp//2)
+    return tmp * tmp * (base if exp % 2 == 1 else 1)
 if __name__ == '__main__':
-    res = check_sorted([1, 2, 3, 4, 5, 6])
-    print(res)
-    r2 = check_sorted([1, 2, 9, 6])
-    print(r2)
+    print(check_sorted([1, 2, 3, 4, 5, 6]))
+    print(check_sorted([1, 2, 9, 6]))
     print(get_1_to_N_inc(100, 1, []))
     print(get_N_to_1_dec(100, []))
     print(power(2, 997))
     print(power(2, -997))
+    print(fast_power(2, 997))
+    print(fast_power(2, -997))
