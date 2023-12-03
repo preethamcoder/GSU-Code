@@ -19,6 +19,17 @@ def get_N_to_1_dec(N, r):
     get_N_to_1_dec(N, r)
     return r
 
+def power(base, exp):
+    if base == 0 or base == 1:
+        return base
+    if exp == 0:
+        return 1
+    if exp == 1:
+        return base
+    if exp >= 0:
+        return base * power(base, exp-1)
+    else:
+        return 1/base * power(base, exp+1)
 if __name__ == '__main__':
     res = check_sorted([1, 2, 3, 4, 5, 6])
     print(res)
@@ -26,3 +37,5 @@ if __name__ == '__main__':
     print(r2)
     print(get_1_to_N_inc(100, 1, []))
     print(get_N_to_1_dec(100, []))
+    print(power(2, 997))
+    print(power(2, -997))
