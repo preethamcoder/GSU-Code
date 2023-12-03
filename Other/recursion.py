@@ -48,9 +48,13 @@ def get_tilings_possible(n):
     Args:
         n (int): Number of columns
     """
-    if n <= 3:
-        return 1
-    return get_tilings_possible(n-1) + get_tilings_possible(n-4)
+    # if n <= 3:
+    #     return 1
+    # return get_tilings_possible(n-1) + get_tilings_possible(n-4)
+    res = [1, 1, 1, 1]
+    for useless_var in range(4, n+1):
+        res.append(res[-1]+res[-4])
+    return res[-1]
 
 if __name__ == '__main__':
     print(check_sorted([1, 2, 3, 4, 5, 6]))
@@ -61,4 +65,4 @@ if __name__ == '__main__':
     print(power(2, -997))
     print(fast_power(2, 997))
     print(fast_power(2, -997))
-    print(get_tilings_possible(6))
+    print(get_tilings_possible(4))
