@@ -63,6 +63,7 @@ if __name__ == '__main__':
     print(get_N_to_1_dec(100, []))
     print(power(2, 997))
     print(power(2, -997))
+    print("Time for faster one")
     print(fast_power(2, 997))
     print(fast_power(2, -997))
     print(get_tilings_possible(4))
