@@ -30,4 +30,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run File
       run: |
-        ls
+        cd CSC4220/Assignment\ 5
+        python link_state.py
+        cat output.txt
